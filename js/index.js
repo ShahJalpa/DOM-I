@@ -42,8 +42,13 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //Navigation set up
-//const navigationList = document.getElementsByTagName("header")[0];
-//navigationList[0].textContent = siteContent["nav"]["nav-item-1"];
+const navigationList = document.querySelectorAll("a");
+navigationList[0].textContent = siteContent["nav"]["nav-item-1"];
+navigationList[1].textContent = siteContent["nav"]["nav-item-2"];
+navigationList[2].textContent = siteContent["nav"]["nav-item-3"];
+navigationList[3].textContent = siteContent["nav"]["nav-item-4"];
+navigationList[4].textContent = siteContent["nav"]["nav-item-5"];
+navigationList[5].textContent = siteContent["nav"]["nav-item-6"];
 
 //setting up the snippest code (circle - shape) image
 let snippetCodeImg = document.getElementById("cta-img");
