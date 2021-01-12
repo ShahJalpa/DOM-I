@@ -50,6 +50,11 @@ navigationList[3].textContent = siteContent["nav"]["nav-item-4"];
 navigationList[4].textContent = siteContent["nav"]["nav-item-5"];
 navigationList[5].textContent = siteContent["nav"]["nav-item-6"];
 
+//change the nav color
+navigationList.forEach(link => link.style.color = "green");
+
+//add two more items in navigation list
+
 //setting up the snippest code (circle - shape) image
 let snippetCodeImg = document.getElementById("cta-img");
 snippetCodeImg.setAttribute('src', siteContent["cta"]["img-src"]);
