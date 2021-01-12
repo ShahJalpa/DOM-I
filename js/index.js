@@ -101,5 +101,5 @@ contactPara[2].textContent = siteContent["contact"]["email"];
 //footerPage.textContent = siteContent["footer"]["copyright"];
 
 //set up footer
-const footerPage = document.querySelector(".contact footer");
-footerPage.textContent = siteContent.contact["footer"]["copyright"];
+const footerPage = document.querySelector("footer");
+footerPage.textContent = siteContent["footer"]["copyright"];
