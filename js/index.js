@@ -58,5 +58,25 @@ const ctaTextButton = document.querySelector('.cta-text button');
 ctaTextButton.textContent = siteContent["cta"]["button"];
 
 //set up main contain
-const headingh4 = document.getElementsByClassName(".main-content")[0];
-headingh4[0].textContent = siteContent["main-content"]["features-h4"];
+//const headingh4 = document.getElementsByClassName(".main-content")[0];
+//headingh4[0].textContent = siteContent["main-content"]["features-h4"];
+
+//set up main content h4
+const mainH4 = document.querySelectorAll('h4');
+mainH4[0].textContent = siteContent["main-content"]["features-h4"];
+mainH4[1].textContent = siteContent["main-content"]["about-h4"];
+mainH4[2].textContent = siteContent["main-content"]["services-h4"];
+mainH4[3].textContent = siteContent["main-content"]["product-h4"];
+mainH4[4].textContent = siteContent["main-content"]["vision-h4"];
+
+//set up main content paragraph
+const mainContentPara = document.querySelectorAll('p');
+mainContentPara[0].textContent = siteContent["main-content"]["features-content"];
+mainContentPara[1].textContent = siteContent["main-content"]["about-content"];
+mainContentPara[2].textContent = siteContent["main-content"]["services-content"];
+mainContentPara[3].textContent = siteContent["main-content"]["product-content"];
+mainContentPara[4].textContent = siteContent["main-content"]["vision-content"];
+
+//set up main content image
+const mainContentImg = document.getElementById("middle-img");
+mainContentImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
